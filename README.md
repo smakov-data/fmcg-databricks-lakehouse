@@ -1,4 +1,4 @@
-## Databricks Sales Data Warehouse (Medallion Architecture)
+## Databricks FMCG Lakehouse (Bronze–Silver–Gold Architecture)
 
 This repository contains an analytical data warehouse implemented in **Databricks** using **Delta Lake** and the **Medallion Architecture (Bronze → Silver → Gold)** approach.
 
