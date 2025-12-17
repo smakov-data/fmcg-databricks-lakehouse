@@ -227,7 +227,7 @@ To ensure analytical stability, default handling is implemented:
 - This prevents data loss and ensures stable aggregations in BI dashboards
 
 
-## 12. Data Quality Controls
+## 11. Data Quality Controls
 
 Data quality checks are applied at different layers:
 
@@ -244,7 +244,7 @@ Gold Layer
 - Aggregation validation
 
 
-## 13. Use Cases
+## 12. Use Cases
 
 The project demonstrates capabilities relevant for the following roles:
 
@@ -254,7 +254,7 @@ The project demonstrates capabilities relevant for the following roles:
 - ETL / DWH Engineer
 
 
-## 14. Technologies
+## 13. Technologies
 
 - Amazon S3 (CSV files as source systems)
 - Databricks
