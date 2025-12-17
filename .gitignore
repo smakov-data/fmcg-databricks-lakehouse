@@ -1,0 +1,33 @@
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Databricks / Notebooks
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Temp / Logs
+*.log
+*.tmp
+*.bak
+
+# Data files (raw / exports)
+*.csv
+*.json
+*.parquet
+
+# Images / docs (generated)
+*.png
+*.pdf
+
+# Secrets / credentials
+.env
+*.key
+*.pem
