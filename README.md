@@ -161,7 +161,62 @@ This workflow reflects common enterprise ETL development practices.
 
 ## 9. Repository Structure
 
-add
+```
+fmcg-databricks-lakehouse/
+│
+├─ datasets/
+│  ├─ 1_parent_company/
+│  │  ├─ full_load/
+│  │  │  ├─ dim_customers.csv
+│  │  │  ├─ dim_gross_price.csv
+│  │  │  ├─ dim_products.csv
+│  │  │  └─ fact_orders.csv
+│  │  └─ incremental_load/
+│  │     └─ fact_orders.csv
+│  │
+│  └─ 2_child_company/
+│     ├─ full_load/
+│     │  ├─ customers.csv
+│     │  ├─ gross_price.csv
+│     │  ├─ products.csv
+│     │  └─ landing_orders/
+│     │     └─ orders_YYYY_MM_DD.csv
+│     └─ incremental_load/
+│        └─ orders_YYYY_MM_DD.csv
+│
+├─ docs/
+│  ├─ data_flow.png
+│  ├─ databricks_dashboard_gold_layer.png
+│  ├─ etl_development_workflow.png
+│  ├─ high_level_architecture.png
+│  ├─ integration_model.png
+│  ├─ medallion_layers_overview.png
+│  ├─ star_schema.png
+│  └─ data_catalog.md
+│
+├─ scripts/
+│  ├─ 01_init/
+│  │  ├─ 01_setup_catalog_and_schema.ipynb
+│  │  ├─ 02_dim_date_table_creation.ipynb
+│  │  └─ 03_utilities.ipynb
+│  │
+│  ├─ 02_dim_data_processing/
+│  │  ├─ 01_customer_data_processing.ipynb
+│  │  ├─ 02_products_data_processing.ipynb
+│  │  └─ 03_pricing_data_processing.ipynb
+│  │
+│  ├─ 03_fact_data_processing/
+│  │  ├─ 01_full_load_facts.ipynb
+│  │  └─ 02_incremental_load_facts.ipynb
+│  │
+│  └─ 04_view/
+│     └─ 01_create_view_fact_orders.ipynb
+│
+├─ .gitignore
+├─ LICENSE
+└─ README.md
+
+```
 
 
 ## 10. Error Handling
